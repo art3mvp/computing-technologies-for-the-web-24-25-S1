@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>My Web</h1>
+                <div class="header-right">
+                    <img src="images/plane-logo.png" alt="logo" class="logo">
+                <select name="language" class="language">
+                    <option value="es">Spanish</option>
+                    <option value="en">English</option>
+                </select>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="login-section">
+                <h2>Acceso</h2>
+                <form>
+                    <label for="login">Introduce los datos de Acceso</label> 
+                    <input type="text" id="login" placeholder="Login"> 
+                    <input type="password" id="login" placeholder="Password"> 
+                    <div>
+                        <input type="checkbox" id="remember"> 
+                        <label>Recordar credenciales </label> 
+                    </div>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+                <div class="register">
+                    <p>Si no tienes cuenta registrate!</p>
+                    <button type="button" class="Register">Registrate</button>    
+                </div>
+            </section>
+
+
+            <section class="greet-section">
+                <div class="greet-description">
+                    <h2>Bienvenido!</h2>
+                    <p>Accede a nuestro sitio y conoce de primera mano las valoraciones sobre los viajes y experiencias más apaciotantes.</p>
+                    <p>Si no dispones de cuenta, registráte de manera gratuita</p>    
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn"><</button>
+                    <div class="carousel-image-placeholder">
+                        <img src="images/plane-section.jpg" alt="image">
+                    </div>
+                    <button class="carousel-btn">></button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <h4>My website copyrights</h4>
+                <div class="social-icons">
+                    <img src="images/instagram.png" alt="instagram">
+                    <img src="images/twitter.png" alt="twitter/x">
+                    <img src="images/facebook.png" alt="facebook">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
