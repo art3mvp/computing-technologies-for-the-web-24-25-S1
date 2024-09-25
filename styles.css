@@ -63,11 +63,116 @@ main {
     margin-right: 10px;
 }
 
+#enlace-aside {
+    padding: 10px;
+    width: 25%;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.logo-barra {
+    width: 40px;
+}
+
+.logo-text a img{
+    vertical-align: middle;
+}
+
+#enlace-aside ul {
+    list-style-type: none;
+}
+
+#categorias-section {
+    width: 25%;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#categorias-section button {
+    border: none;
+}
+
+.articulo-comentarios {
+    margin-right: 10px;
+}
+
+#articulos-section{
+    width: 50%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.articulo {
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.save-image {
+    width: 30px;
+}
+
+.articulo-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.articulo-img {
+    width: 50px;
+}
+
 .login-section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
+.buscar-icon {
+    position: absolute;
+    transform: translateX(50%) translateY(50%);
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+.buscar-box {
+    padding: 10px;
+}
+
+.buscar-input {
+    border: 1 px solid black;
+    height: 40px;
+    width: 200px;
+    padding: 10px 10px 10px 40px;
+}
+
+.articulo-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articulo-header .rating {
+    width: 50px;
+}
+
+
+.grupo-checkbox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.grupo-checkbox label {
+    display: block;
+}
+
+.articulo-resena {
+   align-content: space-around;
+}
 .login-section form {
     display: flex;
     flex-direction: column;
@@ -168,4 +273,34 @@ footer {
 .footer-content .social-icons img {
     width: 40px;
     margin: 0px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column; 
+    }
+
+    .responsive-box {
+        margin-bottom: 10px;
+    }
+
+    #enlace-aside {
+        width: 100%; 
+    }
+
+    #categorias-section {
+        width: 100%;    
+    }
+
+    #articulos-section {
+        width: 100%;     
+    }
+
+    .grupo-checkbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .enlace-aside {
+        display: flex;
+    }
 }
