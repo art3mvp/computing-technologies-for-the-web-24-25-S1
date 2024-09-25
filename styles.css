@@ -2,11 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
+    background-color: rgb(209, 232, 255);
     color: black;
     display: flex;
     flex-direction: column;
@@ -14,11 +15,11 @@ body {
 }
 
 header {
-    margin: 0px 20px;
-    border: 1px solid black;    
+    margin: 0px 0px;
+    background-color: rgb(249, 250, 253);  
 }
 
-.header-container {
+.header {
     padding: 30px;
     display: flex;
     align-items: center;
@@ -26,9 +27,10 @@ header {
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 40px;
+    
 }
 
 h1 {
@@ -36,16 +38,20 @@ h1 {
     font-size: x-large;
 }
 
-.header-right {
+.language-div {
     display: flex;
     align-items: center;
+    background-color: rgb(234, 235, 236);
+    
 }
 
 .language {
     padding: 8px;
-    background-color: whitesmoke;
+    background-color: rgb(194, 202, 218);
     border: 2px;
     cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.43);
+    
 }
 
 main {
@@ -53,14 +59,17 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    
 }
 
 .login-section {
     align-content: center;
     padding: 20px;
-    border: 1px solid black;
     width: 33%;
     margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.905);
+    border-radius: 8px;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
 }
 
 #enlace-aside {
@@ -128,8 +137,9 @@ main {
 }
 
 .login-section h2 {
+    margin-bottom: 4%;
     text-align: center;
-    margin-bottom: 20px;
+    
 }
 
 .buscar-icon {
@@ -188,15 +198,18 @@ main {
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid black;
+    
 }
 
 .login-section form button {
     padding: 8px;
     margin-top: 8px;
     cursor: pointer;
-    border: none;
+    border: 0.5px solid rgb(157, 156, 156);
     margin-bottom: 8px;
-    background-color: whitesmoke;
+    background-color: rgb(194, 202, 218);
+    border-radius: 8px;
+    
 }
 
 .register {
@@ -209,25 +222,30 @@ main {
     padding: 8px;
     margin-top: 8px;
     margin-bottom: 8px;
-    background-color: whitesmoke;
-    border: none;
+    background-color: rgb(194, 202, 218);
+    border: 0.5px solid rgb(157, 156, 156);
     cursor: pointer;
     align-content: center;
+    border-radius: 8px;
+    
 }
 
 .greet-section {
     padding: 20px;
-    border: 1px solid black;
     width: 66%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.905);
+    border-radius: 8px;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
 }
 
-.greet-section h2 {
+.greet-div {
     text-align: center;
-    margin-bottom: 10px;
+    
 }
+
 
 .carousel {
     display: flex;
@@ -236,7 +254,7 @@ main {
 }
 
 .carousel-image-placeholder {
-    height: 100px;
+    height: 300px;
     margin-left: 8px;
     margin-right: 8px;
     align-content: center;
@@ -244,23 +262,33 @@ main {
 }
 
 .carousel-image-placeholder img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 13cm;
+    max-height: 13cm;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(146, 146, 146, 0.448);
 }
 
 .carousel-btn {
-    background: whitesmoke;
+    background: rgb(163, 180, 210);
     border:none;
     padding: 8px;
     border-radius: 2px;
+    height: 20%;
     cursor: pointer;
+    margin-top: 12%;
+    box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.43);
 }
 
 footer {
-    text-align: start;
-    border: 1px solid black;
+    text-align: center;
     padding: 8px;
-    margin: 2px 20px;
+    margin: 2px 0px;
+    background-color: rgba(255, 255, 255, 0.893);
+}
+
+.copyrights{
+    text-align: center;
+    margin-left: 450px;
 }
 
 .footer-content {
@@ -270,10 +298,45 @@ footer {
     padding: 8px;
 }
 
-.footer-content .social-icons img {
-    width: 40px;
+.footer-content .redes-sociales img {
+    width: 25px;
     margin: 0px 10px;
 }
+.registro-sect {
+    align-content: center;
+    padding: 20px;
+    border: 1px solid rgb(106, 132, 159);
+    width: 50%;
+    margin-right: 480px;
+    background-color: rgb(249, 250, 253);
+    border-radius: 8px;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
+}
+
+.registro-sect h2 {
+    text-align: center;
+    
+}
+
+.registro-sect form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-sect form input[type="text"],
+.registro-sect form input[type="password"]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 45%;
+}
+
+.nombre-apellido{
+    display: grid;
+    grid-template-columns: 60% 60%;
+    gap:10px;
+}
+
 
 @media screen and (max-width: 1000px) {
     main {
