@@ -15,8 +15,8 @@
                 <div class="header-right">
                     <img src="images/plane-logo.png" alt="logo" class="logo">
                     <img src="" alt="perfil" class="perfil">
-                    <button>Login</button>
-                    <button>Logout</button>
+                    <button class="header-button">Login</button>
+                    <button class="header-button">Logout</button>
                     <select name="language" class="language">
                         <option value="es">Spanish</option>
                         <option value="en">English</option>
@@ -28,7 +28,7 @@
             <aside id="enlace-aside" class="responsive-box">
                 <h3>Enlaces de interes</h3>
                 <nav>
-                    <ul>
+                    <ul class="navbar">
                         <li class="logo-text"><a href="#"><img src="images/five.png" alt="Top 5 Logo" class="logo-barra">Top 5 !</a></li>
                         <li class="logo-text"><a href="#"><img src="images/novedad.png" alt="Novedades Logo" class="logo-barra">Novedades</a></li>
                         <li class="logo-text"><a href="#"><img src="images/contact.png" alt="Contact Logo" class="logo-barra">Contacto</a></li>
@@ -49,10 +49,9 @@
                     </div>
                     
                     <div class="buscar-box">
-                        <img src="images/search.png" alt="search-icon" class="buscar-icon">
                         <input type="text" placeholder="Pilates" class="buscar-input">
+                        <button type="submit" class="buscar-button">Buscar experiencias</button>
                     </div>
-                    <button type="submit">Buscar experiencias</button>
                 </form>
             </section>
             <section id="articulos-section" class="responsive-box">
@@ -69,7 +68,7 @@
                                 <p>Comentario 3...</p>
                             </div>
                             <div class="articulo-resena">
-                                <textarea placeholder="Comentar"></textarea>
+                                <textarea placeholder="Comentar" id="textarea"></textarea>
                                 <input type="number" min="1" max="5" placeholder="5">
                                 <button><img src="images/save.png" alt="Save" class="save-image"></button>
                             </div>   
@@ -120,7 +119,7 @@
         <footer>
             <div class="footer-content">
                 <h4>My website copyrights</h4>
-                <div class="social-icons">
+                <div class="redes-sociales">
                     <a href="https://www.instagram.com/">
                         <img href="https://www.instagram.com/" src="images/instagram.png" alt="instagram">
                     </a>   

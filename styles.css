@@ -1,27 +1,15 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(209, 232, 255);
-    color: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    margin: 0px 0px;
-    background-color: rgb(249, 250, 253);  
-}
-
 .header-right {
     display: flex;
     align-items: center;
+}
+
+.header-button {
+    margin-right: 5px;
+    padding: 8px;
+    background-color: rgb(194, 202, 218);
+    border: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.43);
 }
 
 .header-container {
@@ -31,11 +19,11 @@ header {
     justify-content: space-between;
 }
 
-.header {
-    padding: 30px;
+.buscar-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    padding: 10px;
 }
 
 .logo {
@@ -43,55 +31,6 @@ header {
     height: 40px;
     margin-right: 40px;
     
-}
-
-h1 {
-    margin-left: 20px;
-    font-size: x-large;
-}
-
-.language-div {
-    display: flex;
-    align-items: center;
-    background-color: rgb(234, 235, 236);
-    
-}
-
-.language {
-    padding: 8px;
-    background-color: rgb(194, 202, 218);
-    border: 2px;
-    cursor: pointer;
-    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.43);
-    
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    
-}
-
-.login-section {
-    align-content: center;
-    padding: 20px;
-    width: 33%;
-    margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.905);
-    border-radius: 8px;
-    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
-}
-
-#enlace-aside {
-    padding: 10px;
-    width: 25%;
-    background-color: whitesmoke;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
 }
 
 .logo-barra {
@@ -102,10 +41,35 @@ main {
     vertical-align: middle;
 }
 
-#enlace-aside ul {
+ul.navbar {
     list-style-type: none;
+    display: grid;
+    
 }
 
+ul.navbar li {
+    margin: 10px 0px;
+}
+
+ul.navbar li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+#enlace-aside {
+    padding: 20px;
+    width: 25%;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+/* categorias */
+ 
 #categorias-section {
     width: 25%;
     padding: 20px;
@@ -118,6 +82,17 @@ main {
     border: none;
 }
 
+input.buscar-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button.buscar-button {
+    width: 100%;
+}
+
+
+/* articulo */
 .articulo-comentarios {
     margin-right: 10px;
 }
@@ -141,35 +116,10 @@ main {
 
 .articulo-main {
     display: flex;
-    flex-direction: row;
 }
 
 .articulo-img {
     width: 50px;
-}
-
-.login-section h2 {
-    margin-bottom: 4%;
-    text-align: center;
-    
-}
-
-.buscar-icon {
-    position: absolute;
-    transform: translateX(50%) translateY(50%);
-    max-width: 20px;
-    margin-right: 10px;
-}
-
-.buscar-box {
-    padding: 10px;
-}
-
-.buscar-input {
-    border: 1 px solid black;
-    height: 40px;
-    width: 200px;
-    padding: 10px 10px 10px 40px;
 }
 
 .articulo-header {
@@ -183,6 +133,7 @@ main {
 
 
 .grupo-checkbox {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
@@ -193,8 +144,96 @@ main {
 }
 
 .articulo-resena {
-   align-content: space-around;
+    align-content: space-around;
 }
+
+.articulo-resena {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+
+/* laura */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(209, 232, 255);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0px 0px;
+    background-color: rgb(249, 250, 253);  
+}
+
+.header {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+
+}
+
+h1 {
+    margin-left: 20px;
+    font-size:xx-large;
+}
+
+.language-div {
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 235, 236);
+
+}
+
+.language {
+    padding: 8px;
+    background-color: rgb(194, 202, 218);
+    border: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.43);
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.login-section {
+    align-content: center;
+    padding: 20px;
+    width: 33%;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.905);
+    border-radius: 8px;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
+}
+
+.login-section h2 {
+    margin-bottom: 4%;
+    text-align: center;
+
+}
+
 .login-section form {
     display: flex;
     flex-direction: column;
@@ -210,7 +249,7 @@ main {
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid black;
-    
+
 }
 
 .login-section form button {
@@ -221,7 +260,7 @@ main {
     margin-bottom: 8px;
     background-color: rgb(194, 202, 218);
     border-radius: 8px;
-    
+
 }
 
 .register {
@@ -239,7 +278,7 @@ main {
     cursor: pointer;
     align-content: center;
     border-radius: 8px;
-    
+
 }
 
 .greet-section {
@@ -255,9 +294,8 @@ main {
 
 .greet-div {
     text-align: center;
-    
-}
 
+}
 
 .carousel {
     display: flex;
@@ -291,71 +329,156 @@ main {
     box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.43);
 }
 
+/*Aquí comienza el footer*/ 
+
 footer {
     text-align: center;
     padding: 8px;
-    margin: 2px 0px;
     background-color: rgba(255, 255, 255, 0.893);
 }
 
 .copyrights{
     text-align: center;
-    margin-left: 450px;
 }
 
-.footer-content .redes-sociales img {
-    width: 25px;
-    margin: 0px 10px;
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    margin-left: 25%;
+    justify-content:space-between ;
 }
+
+.redes-sociales img {
+    width: 25px;
+}
+
+/*Aquí comienza la página de registro*/
 
 .registro-sect {
     align-content: center;
-    padding: 20px;
-    border: 1px solid rgb(106, 132, 159);
-    width: 50%;
-    margin-right: 480px;
+    padding: 3%;
+    width: 49%;
     background-color: rgb(249, 250, 253);
     border-radius: 8px;
     box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
 }
 
 .registro-sect h2 {
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .registro-sect form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .registro-sect form input[type="text"],
 .registro-sect form input[type="password"]{
-    padding: 8px;
+    padding: 2%;
     border-radius: 8px;
     border: 1px solid black;
-    width: 45%;
+    width: 95%;
+    margin-top: 2%;
+
+}
+.registro-sect form input[placeholder="nombre"],
+.registro-sect form input[placeholder="apellido"]{
+    padding: 4%;
 }
 
-.nombre-apellido{
+
+.registro-sect form input[type="date"]{
+    padding:4%;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.registro-sect form input[placeholder="login"],
+.registro-sect form input[placeholder="password"]{
+    padding:4%;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.checkbox{
+    font-size:90%;
+}
+.registro-sect button{
+    padding:1%;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: rgb(194, 202, 218);
+    margin-top: 5%;
+}
+.grid{
     display: grid;
     grid-template-columns: 60% 60%;
-    gap:10px;
+    gap:4%;
+    width: 79%;
+    margin-top: 2%;
 }
 
-.footer-content {
+.fecha{
+    display:flex;
+    flex-direction: column;
+    width: 93%;
+}
+
+.img-usuario{
+    width: 10%;
+    height: 100%;
+}
+
+.row-foto {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    gap: 10%; 
+    font-size: small;
 }
 
-.footer-content .social-icons img {
-    width: 40px;
-    margin: 0px 10px;
+.perfil{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
 }
 
-@media screen and (max-width: 1000px) {
+.fecha-perfil{
+    display: flex;
+    gap:5%;    
+}
+
+.registro-sect form input[type="file"]{
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;  
+    width: 90%;
+    padding: 4%;
+} 
+.texto-foto{
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 1%;
+    width: 50%;
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+}
+
+.cookies {
+    align-content: center;
+    padding: 3%;
+    width: 49%;
+    background-color: rgb(249, 250, 253);
+    border-radius: 8px;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
+    font-size: small;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
     main {
         flex-direction: column; 
     }
@@ -368,6 +491,18 @@ footer {
         width: 100%; 
     }
 
+    ul.navbar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    ul.navbar li {
+        margin: 0px 15px;
+    }
+
+    .grupo-checkbox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #categorias-section {
         width: 100%;    
     }
@@ -376,11 +511,29 @@ footer {
         width: 100%;     
     }
 
-    .grupo-checkbox {
+    .enlace-aside {
+        display: flex;
+    }
+
+    .buscar-box {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .buscar-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.navbar {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .enlace-aside {
-        display: flex;
+    .grupo-checkbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
