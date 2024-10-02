@@ -338,7 +338,7 @@ footer {
 }
 
 .copyrights{
-    text-align: center;
+    text-align: left;
 }
 
 .footer-content {
@@ -346,7 +346,8 @@ footer {
     flex-direction: row;
     align-items: center;
     padding: 8px;
-    margin-left: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content:space-between ;
 }
 
@@ -412,9 +413,8 @@ footer {
     background-color: rgb(194, 202, 218);
     margin-top: 5%;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 60% 60%;
+.login-password {
+    display: flex;
     gap:4%;
     width: 79%;
     margin-top: 2%;
@@ -435,21 +435,24 @@ footer {
     display: flex;
     align-items: center;
     gap: 10%; 
-    font-size: small;
 }
 
 .perfil{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 10%;
 }
 
 .fecha-perfil{
     display: flex;
-    gap:5%;    
+    align-items: center;
+    gap: 10%;
 }
 
 .registro-sect form input[type="file"]{
+    display: none;
+} 
+.texto-foto{
     border-radius: 8px;
     border: 1px solid black;
     padding: 1%;
@@ -457,14 +460,12 @@ footer {
     text-align: center;  
     width: 90%;
     padding: 4%;
-} 
-.texto-foto{
-    border-radius: 8px;
-    border: 1px solid black;
-    padding: 1%;
-    width: 50%;
-    background-color: rgb(228, 228, 228);
     text-align: center;
+}
+
+.texto-foto:hover {
+    background-color: rgb(100, 99, 99);
+    
 }
 
 .cookies {
@@ -481,6 +482,11 @@ footer {
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column; 
+    }
+
+    .registro-sect {
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .responsive-box {
@@ -518,6 +524,22 @@ footer {
     .buscar-box {
         display: flex;
         flex-direction: row;
+    }
+
+    .login-password {
+        flex-direction: column;
+    }
+
+    .cookies {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .redes-sociales img {
+        margin-top: 10px;
     }
 }
 
