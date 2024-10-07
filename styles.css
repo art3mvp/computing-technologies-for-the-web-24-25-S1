@@ -1,3 +1,42 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(209, 232, 255);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size:xx-large;
+}
+
+.language-div {
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 235, 236);
+
+}
+
+.language {
+    padding: 8px;
+    background-color: rgb(194, 202, 218);
+    border: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.43);
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+/* header de la página */
 .header-right {
     display: flex;
     align-items: center;
@@ -13,6 +52,7 @@
 }
 
 .header-container {
+    background-color: rgb(249, 250, 253);  
     padding: 30px;
     display: flex;
     align-items: center;
@@ -23,7 +63,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 .logo {
@@ -41,34 +81,35 @@
     vertical-align: middle;
 }
 
-ul.navbar {
-    list-style-type: none;
-    display: grid;
-    
-}
-
-ul.navbar li {
-    margin: 10px 0px;
-}
-
-ul.navbar li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle; 
-}
+/*  Navbar en la pagina main*/
 
 #enlace-aside {
     padding: 20px;
     width: 25%;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     margin-right: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
 }
 
-/* categorias */
+.navbar {
+    list-style-type: none;
+    display: grid;
+    
+}
+
+.navbar li {
+    margin: 10px 0px;
+}
+
+.navbar li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+/* section de categorias de main */
  
 #categorias-section {
     width: 25%;
@@ -78,21 +119,27 @@ ul.navbar li img {
     border-radius: 5px;
 }
 
-#categorias-section button {
-    border: none;
-}
-
 input.buscar-input {
+    padding: 2%;
+    border: none;
     width: 100%;
     margin-bottom: 10px;
 }
 
 button.buscar-button {
+    padding: 2%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(194, 202, 218);
     width: 100%;
 }
 
+.buscar-button:hover {
+    cursor: pointer;
+}
 
-/* articulo */
+
+/* articulo de la pagina main */
 .articulo-comentarios {
     margin-right: 10px;
 }
@@ -161,62 +208,7 @@ button.buscar-button {
 
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(209, 232, 255);
-    color: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    margin: 0px 0px;
-    background-color: rgb(249, 250, 253);  
-}
-
-.header {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 40px;
-
-}
-
-h1 {
-    margin-left: 20px;
-    font-size:xx-large;
-}
-
-.language-div {
-    display: flex;
-    align-items: center;
-    background-color: rgb(234, 235, 236);
-
-}
-
-.language {
-    padding: 8px;
-    background-color: rgb(194, 202, 218);
-    border: 2px;
-    cursor: pointer;
-    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.43);
-
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-
-}
+/* section de login de pagina de inicio */
 
 .login-section {
     align-content: center;
@@ -281,12 +273,13 @@ main {
 
 }
 
+/* seccion de bienvenida de la pagina de inicio */
+
 .greet-section {
     padding: 20px;
     width: 66%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.905);
     border-radius: 8px;
     box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
@@ -298,6 +291,7 @@ main {
 }
 
 .carousel {
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -329,33 +323,7 @@ main {
     box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.43);
 }
 
-/*Aquí comienza el footer*/ 
-
-footer {
-    text-align: center;
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.893);
-}
-
-.copyrights{
-    text-align: left;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content:space-between ;
-}
-
-.redes-sociales img {
-    width: 25px;
-}
-
-/*Aquí comienza la página de registro*/
+/*página de registro*/
 
 .registro-sect {
     align-content: center;
@@ -407,9 +375,9 @@ footer {
     font-size:90%;
 }
 .registro-sect button{
-    padding:1%;
+    padding: 2%;
     border-radius: 8px;
-    border: 1px solid black;
+    border: none;
     background-color: rgb(194, 202, 218);
     margin-top: 5%;
 }
@@ -432,20 +400,17 @@ footer {
 }
 
 .row-foto {
+    margin-top: 40%;
     display: flex;
     align-items: center;
     gap: 10%; 
 }
 
-.perfil{
-    display: flex;
-    flex-direction: row;
-    row-gap: 10%;
-}
-
 .fecha-perfil{
     display: flex;
-    align-items: center;
+    vertical-align: top;
+    align-content: space-around;
+    margin-right: 5%;
     gap: 10%;
 }
 
@@ -465,9 +430,10 @@ footer {
 
 .texto-foto:hover {
     background-color: rgb(100, 99, 99);
-    
+    cursor: pointer;
 }
 
+/* section de cookies */
 .cookies {
     align-content: center;
     padding: 3%;
@@ -478,6 +444,38 @@ footer {
     font-size: small;
     text-align: justify;
 }
+
+/* footer de la pagina */ 
+
+footer {
+    text-align: center;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.893);
+}
+
+.copyrights{
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content:space-between ;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 25px;
+}
+
+/* la parte responsive de la pagina */
 
 @media screen and (max-width: 768px) {
     main {
@@ -521,8 +519,17 @@ footer {
         display: flex;
     }
 
+    .buscar-input {
+        margin-top: 10px;
+    }
+
+    button.buscar-button {
+        border-radius: 0px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
     .buscar-box {
-        display: flex;
         flex-direction: row;
     }
 
@@ -544,9 +551,24 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
+
+    .header-right {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
     .buscar-box {
         display: flex;
         flex-direction: column;
+    }
+
+    button.buscar-button {
+        border-radius: 8px;
     }
 
     ul.navbar {
