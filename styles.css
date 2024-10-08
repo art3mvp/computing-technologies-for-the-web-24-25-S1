@@ -66,11 +66,10 @@ main {
     margin-top: 10px;
 }
 
-.logo {
+.image-header {
     width: 40px;
     height: 40px;
     margin-right: 40px;
-    
 }
 
 .logo-barra {
@@ -558,8 +557,8 @@ footer {
         align-items: start;
     }
 
-    .logo {
-        margin-bottom: 10px;
+    .header-responsive {
+        margin-bottom: 10%;
     }
 
     .buscar-box {
