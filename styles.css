@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(209, 232, 255);
@@ -43,8 +49,8 @@ main {
 }
 
 .header-button {
-    margin-right: 5px;
-    padding: 8px;
+    margin-right: 15px;
+    padding: 10px;
     background-color: rgb(194, 202, 218);
     border: 2px;
     cursor: pointer;
@@ -108,7 +114,8 @@ main {
     margin-right: 10px;
     vertical-align: middle; 
 }
-/* section de categorias de main */
+
+/* categorias */
  
 #categorias-section {
     width: 25%;
@@ -116,19 +123,23 @@ main {
     margin-right: 10px;
     background-color: whitesmoke;
     border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
 }
 
-input.buscar-input {
-    padding: 2%;
+#categorias-section button {
     border: none;
-    width: 100%;
-    margin-bottom: 10px;
 }
 
-button.buscar-button {
+.buscar-input {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.buscar-button {
     padding: 2%;
     border-radius: 8px;
-    border: none;
     background-color: rgb(194, 202, 218);
     width: 100%;
 }
@@ -138,45 +149,19 @@ button.buscar-button {
 }
 
 
-/* articulo de la pagina main */
-.articulo-comentarios {
-    margin-right: 10px;
+.buscar-box input[type="text"]{
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(59, 58, 58);
 }
 
-#articulos-section{
-    width: 50%;
-    border-radius: 5px;
-    background-color: whitesmoke;
+.buscar-box button{
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color:rgb(194, 202, 218);
 }
-
-.articulo {
-    margin: 10px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.save-image {
-    width: 30px;
-}
-
-.articulo-main {
-    display: flex;
-}
-
-.articulo-img {
-    width: 50px;
-}
-
-.articulo-header {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.articulo-header .rating {
-    width: 50px;
-}
-
 
 .grupo-checkbox {
     margin-top: 10px;
@@ -187,25 +172,87 @@ button.buscar-button {
 
 .grupo-checkbox label {
     display: block;
+    margin-top: 12px;
 }
 
-.articulo-resena {
-    align-content: space-around;
+/* articulo */
+
+
+#articulos-section{
+    width: 50%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
 }
 
-.articulo-resena {
+.articulo {
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.save-image {
+    width: 100%;
+}
+
+.articulo-main {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start; 
 }
 
-/* laura */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
+.articulo-header {
+    display: flex;
 }
+
+.articulo-header h4{
+    margin-left: 10%;
+    width: 25%;
+}
+
+.articulo-header img{
+    border-radius: 4px;
+    width: 15%;
+    height:20%;
+    margin-left: 10%;
+}
+
+.articulo-resena {
+    padding: 20px;
+    display: flex;
+    vertical-align: super;
+    margin-top: 10px;
+}
+
+.articulo-resena button,
+.articulo-resena input[type="number"] {
+    height: 40%;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.articulo-resena button{
+    background-color: transparent;
+    border: none;
+    margin-left: 0%;
+    cursor: pointer;
+}
+
+.articulo-resena textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.articulo-comentarios {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.articulo-comentarios p{
+    letter-spacing: 1px;
+}
+
 
 /* section de login de pagina de inicio */
 
@@ -222,7 +269,10 @@ button.buscar-button {
 .login-section h2 {
     margin-bottom: 4%;
     text-align: center;
+}
 
+#remember {
+    margin-top: 10px;
 }
 
 .login-section form {
@@ -333,6 +383,10 @@ button.buscar-button {
     box-shadow: 1px 10px 15px rgba(58, 58, 58, 0.3);
 }
 
+.info-personal {
+    margin-top: 10px;
+}
+
 .registro-sect h2 {
     text-align: center;    
 }
@@ -346,76 +400,75 @@ button.buscar-button {
 .registro-sect form input[type="password"]{
     padding: 2%;
     border-radius: 8px;
-    border: 1px solid black;
-    width: 95%;
+    width: 100%;
     margin-top: 2%;
-
 }
-.registro-sect form input[placeholder="nombre"],
-.registro-sect form input[placeholder="apellido"]{
-    padding: 4%;
-}
-
 
 .registro-sect form input[type="date"]{
     padding:4%;
     border-radius: 8px;
     border: 1px solid black;
 }
-
-.registro-sect form input[placeholder="login"],
-.registro-sect form input[placeholder="password"]{
-    padding:4%;
-    border-radius: 8px;
-    border: 1px solid black;
-}
-
 .checkbox{
     font-size:90%;
+    cursor: pointer;
 }
-.registro-sect button{
-    padding: 2%;
+.aceptar-guardar button{
+    padding:1%;
     border-radius: 8px;
-    border: none;
+    border: 1px solid black;
     background-color: rgb(194, 202, 218);
     margin-top: 5%;
+    cursor: pointer;
+    width: 40%;
 }
-.login-password {
+
+.column-usuario {
     display: flex;
     gap:4%;
-    width: 79%;
+    width: 100%;
     margin-top: 2%;
 }
 
-.fecha{
-    display:flex;
+.fecha {
+    display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 100%;
 }
 
-.img-usuario{
-    width: 10%;
-    height: 100%;
+.img-usuario {
+    width: 20%;
+    height: 80%;
 }
 
 .row-foto {
-    margin-top: 40%;
     display: flex;
     align-items: center;
     gap: 10%; 
 }
 
+.usuario-perfil{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10%;
+}
+
 .fecha-perfil{
     display: flex;
-    vertical-align: top;
-    align-content: space-around;
-    margin-right: 5%;
+    align-items: center;
     gap: 10%;
 }
 
 .registro-sect form input[type="file"]{
     display: none;
 } 
+
+.aceptar-guardar{
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .texto-foto{
     border-radius: 8px;
     border: 1px solid black;
@@ -429,10 +482,9 @@ button.buscar-button {
 
 .texto-foto:hover {
     background-color: rgb(100, 99, 99);
-    cursor: pointer;
+    
 }
 
-/* section de cookies */
 .cookies {
     align-content: center;
     padding: 3%;
@@ -471,10 +523,10 @@ footer {
 }
 
 .redes-sociales img {
-    width: 25px;
+    width: 30px;
 }
 
-/* la parte responsive de la pagina */
+/* responsive tamaño para tablet */
 
 @media screen and (max-width: 768px) {
     main {
@@ -519,13 +571,12 @@ footer {
     }
 
     .buscar-input {
+        margin-right: 5%;
         margin-top: 10px;
     }
 
-    button.buscar-button {
-        border-radius: 0px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
+    .buscar-button {
+        margin-top: 10px;
     }
 
     .buscar-box {
@@ -547,10 +598,21 @@ footer {
     .redes-sociales img {
         margin-top: 10px;
     }
+
+    .login-password {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+/* responsive tamaño para móvil */
 
 @media screen and (max-width: 600px) {
 
+    .nombre-apellido {
+        display: flex;
+        flex-direction: column;
+    }
 
     .header-right {
         flex-direction: column;
@@ -578,5 +640,13 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+
+    .logo-text {
+        padding: 3px;
+    }
+
+    .fecha-perfil {
+        flex-direction: column;
     }
 }

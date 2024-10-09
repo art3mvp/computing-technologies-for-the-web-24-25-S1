@@ -13,7 +13,7 @@
             <div class="header-container">
                 <h1>Travelling</h1>
                 <div class="header-right">
-                    <img src="images/plane-logo.png" alt="logo" class="image-header">
+                    <img src="images/plane-logo.png" alt="logo" class="image-header header-responsive">
                     <select name="language" class="language">
                         <option value="es">Spanish</option>
                         <option value="en">English</option>
@@ -24,7 +24,7 @@
         <main>
             <section class="login-section">
                 <h2>Acceso</h2>
-                <form>
+                <form action="main.html">
                     <label>Introduce los datos de Acceso</label> 
                     <input type="text" placeholder="usuario"> 
                     <input type="password" placeholder="Password"> 
@@ -34,10 +34,10 @@
                     </div>
                     <button type="submit">Iniciar sesión</button>
                 </form>
-                <div class="register">
+                <form action="register.html" class="register">
                     <p>Si no tienes cuenta registrate!</p>
-                    <button onclick="location.href='register.html'">Registrate</button>
-                </div>
+                    <button type="submit">Registrate</button>
+                </form>
             </section>
             <section class="greet-section">
                 <div class="greet-div">
